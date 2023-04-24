@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment"
+    >
+
+   <com.google.android.material.textfield.TextInputEditText
+       android:id="@+id/editName"
+       android:layout_width="280dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:autofillHints="name"
+       android:layout_margin="15dp"
+       android:inputType="text"
+       android:textSize="27sp"
+       />
+
+   <com.google.android.material.materialswitch.MaterialSwitch
+       android:id="@+id/switch1"
+       android:layout_width="70dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toEndOf="@id/editName"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_margin="15dp"
+       />
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/saveFirstFragment"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/editName"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/continueFirstFragment"
+       style="@style/style1"
+       android:text="Зберегти"
+
+       />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/continueFirstFragment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/editName"
+      app:layout_constraintStart_toEndOf="@id/saveFirstFragment"
+      app:layout_constraintEnd_toEndOf="parent"
+      style="@style/style1"
+      android:text="Продовжити"
+      />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
